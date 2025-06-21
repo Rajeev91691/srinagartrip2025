@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Srinagar 2025 Trip Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background Slideshow -->
+  <div class="slideshow-container">
+    <img src="photos/slideshow/IMG_20241230_174050_491.jpg" class="slide" />
+    <img src="photos/slideshow/IMG_20241230_174430_3.jpg" class="slide" />
+    <img src="photos/slideshow/IMG_20250103_162801_458.jpg" class="slide" />
+  </div>
+
+  <!-- Page Content -->
+  <div class="content-box">
+    <h1 class="homepage-title">Srinagar Trip 2025</h1>
+
+    <div class="home-gallery">
+      <a href="pehalgam.html"><div class="preview-container"><img src="photos/previews/pehalgam.jpg" alt="Pehalgam"><div class="image-label">Pehalgam</div></div></a>
+      <a href="sonmarg.html"><div class="preview-container"><img src="photos/previews/sonmarg.jpg" alt="Sonmarg"><div class="image-label">Sonmarg</div></div></a>
+      <a href="doodhpathri.html"><div class="preview-container"><img src="photos/previews/doodhpathri.jpg" alt="Doodhpathri"><div class="image-label">Doodhpathri</div></div></a>
+      <a href="gulmarg.html"><div class="preview-container"><img src="photos/previews/gulmarg.jpg" alt="Gulmarg"><div class="image-label">Gulmarg</div></div></a>
+      <a href="dal-lake.html"><div class="preview-container"><img src="photos/previews/dal-lake.jpg" alt="Dal Lake"><div class="image-label">Dal Lake</div></div></a>
+      <a href="drung.html"><div class="preview-container"><img src="photos/previews/drung.jpg" alt="Drung"><div class="image-label">Drung Waterfall</div></div></a>
+      <a href="shankaracharya.html"><div class="preview-container"><img src="photos/previews/shankaracharya.jpg" alt="Shankaracharya"><div class="image-label">Adi Shankaracharya Temple</div></div></a>
+      <a href="flight-sunset.html"><div class="preview-container"><img src="photos/previews/flight-sunset.jpg" alt="Flight Sunset"><div class="image-label">Flight Sunset</div></div></a>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let slideIndex = 0;
+
+    function showSlides() {
+      slides.forEach(slide => slide.style.opacity = "0");
+      slides[slideIndex].style.opacity = "0.5";
+      slideIndex = (slideIndex + 1) % slides.length;
+      setTimeout(showSlides, 4000);
+    }
+
+    showSlides();
+  </script>
+</body>
+</html>
